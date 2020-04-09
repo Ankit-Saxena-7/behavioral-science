@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset="utf-8">
+        <link rel="icon" href="Resources/TitleIcon.png" type="image/x-icon" />
+        <title>alternate universes</title>
+        <link rel="stylesheet" href="Design.css">
+        <script src="Transformation.js"></script>
+    </head>
+
+    <body>
+        <div class="CenterAlign">
+            <img id="imgTeamName" src="Resources/imgTeamName.png" alt="Optimistic Irrationals" class="responsive">
+        </div>
+        <div class="CenterAlign">
+            <img id="imgAppName" src="Resources/imgAppName.png" alt="Christmas Yet To Come" class="responsive">
+        </div>
+        <div class="CenterAlign">
+            <p id="paraInstructions">
+                Upload your current picture, select a habit you commit to change,<br>and see how your future-self transforms...
+            </p>
+        </div>
+        <div id="divAppColumnContainer" class="CenterAlign">
+            <div id="divMainAppletColumns" class="CenterAlign">
+
+                <div id="divColumnCamera" class="AppColumn CenterAlign">
+                    <div class="CenterAlign">
+                        <button id="btnCamera" onclick="alert('Say cheese!!')">
+                            <img id="iconCamera" src="Resources/iconCamera.png" alt="Capture!" class="responsive">
+                        </button>
+                    </div>
+                    <div id="divVideoContainer">
+                        <!-- <video id="vidCapture" playsinline autoplay></video> -->
+                        <img id="vidCapture" src="Resources/HughJackmanFace.jpg" alt="Present">
+                    </div>
+                </div>
+                <div id="divColumnHabits" class="AppColumn CenterAlign">
+                    <div id="divHabitsList">
+                        <div id="divHealthOptions">
+                            <section>
+                                <div onclick="DisplayHabitOne()">
+                                    <input type="radio" id="control_01" name="select" value="1" checked>
+                                    <label for="control_01" class="lblHealthOptions">
+                                        <h2>Status Quo</h2>
+                                        <p class="pHabits">Maintain the status quo. Only 2 percent people have selected this option.</p>
+                                    </label>
+                                </div>
+                                <div onclick="DisplayHabitTwo()">
+                                    <input type="radio" id="control_02" name="select" value="2">
+                                    <label for="control_02" class="lblHealthOptions">
+                                        <h2>Swap It</h2>
+                                        <p class="pHabits">Excellent choice! Replace soft drinks with Seltzer once a week. 60 percent people have committed to this habit.</p>
+                                    </label>
+                                </div>
+                                <div onclick="DisplayHabitThree()">
+                                    <input type="radio" id="control_03" name="select" value="3">
+                                    <label for="control_03" class="lblHealthOptions">
+                                        <h2>Get Active</h2>
+                                        <p class="pHabits">Now we're talking! Run two kilometers every week. 38 percent people have committed to this habit.</p>
+                                    </label>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+                <div id="divColumnFuture" class="AppColumn CenterAlign">
+                    <div id="divColumnFutureImage">
+                        <div class="CenterAlign">
+                            <label class="lblAlternateSelves">You, ten years later...</label>
+                        </div>
+                        <div id="divPhotoUniverseOne">
+                            <img id="imgPhotoUniverseOne" src="Resources/HughJackmanFaceStatusQuo.jpg" alt="Present">
+                        </div>
+                        <div id="divAlternateUniverse" class="CenterAlign">
+                            <label class="lblAlternateSelves">What can be, ten years later...</label>
+                        </div>
+                        <div id="divPhotoUniverseTwo">
+                            <img id="imgPhotoUniverseTwo" src="Resources/HughJackmanFaceStatusQuo.jpg" alt="Future One">
+                            <img id="imgPhotoUniverseThree" src="Resources/HughJackmanFaceBetter.jpg" alt="Future Two" style="display:none;">
+                            <img id="imgPhotoUniverseFour" src="Resources/HughJackmanFaceBest.jpg" alt="Future Three" style="display:none;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
