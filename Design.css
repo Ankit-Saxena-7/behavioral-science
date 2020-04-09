@@ -202,7 +202,7 @@ input[type="radio"]#control_05:checked + label {
   border-color: red;
 }
 .pHabits {
-  font-weight: 100;
+  font-weight: 200;
   font-size: 12px;
 }
 
@@ -269,4 +269,9 @@ h2
 .lblAlternateSelves
 {
   color: #444444;
+}
+
+.EmpiricalEvidence
+{
+  font-weight: bold;
 }
